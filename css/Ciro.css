@@ -116,7 +116,7 @@ header nav ul {
     display: none;
   }
 
-  header nav .toggle-menu:hover + ul {
+  header nav:hover .toggle-menu + ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -460,7 +460,10 @@ header nav ul li a:hover {
     font-size: 20px;
     transition: 0.3s;
     width: fit-content;
+    position: relative;
     text-align: center;
+    top: 0;
+    left: -10px;
   }
 }
 @media (max-width: 991px) {
@@ -554,7 +557,7 @@ header nav ul li a:hover {
     z-index: -100;
     position: relative;
     visibility: visible;
-    top: -200px;
+    top: -50px;
     width: 100%;
     overflow: hidden;
     transform: translate3d(0px, -160px, 0px);
@@ -643,6 +646,11 @@ header nav ul li a:hover {
   display: flex;
   text-align: center;
 }
+@media (max-width: 786px) {
+  .services .left .container .icons {
+    flex-direction: column;
+  }
+}
 .services .left .container .icons .box .icon-1,
 .services .left .container .icons .box .icon-2 {
   margin-top: 50px;
@@ -659,6 +667,11 @@ header nav ul li a:hover {
   font-size: 18px;
   color: #999;
 }
+@media (max-width: 786px) {
+  .services .left .container .icons .box p {
+    text-align: center;
+  }
+}
 /* End Services */
 /* Start Gallery */
 .gallery {
@@ -667,6 +680,11 @@ header nav ul li a:hover {
 .gallery .container {
   padding: 180px 60px 70px 100px;
   transition: 0.3s;
+}
+@media (max-width: 1024px) {
+  .gallery .container {
+    padding: 0;
+  }
 }
 .gallery .container .header {
   display: flex;
@@ -678,7 +696,7 @@ header nav ul li a:hover {
 }
 @media (max-width: 1024px) {
   .gallery .container .header {
-    margin-right: 0;
+    margin-right: 100px;
   }
 }
 .gallery .container .gallery-container {
@@ -808,7 +826,7 @@ header nav ul li a:hover {
     z-index: -100;
     position: relative;
     visibility: visible;
-    top: -200px;
+    top: -150px;
     width: 100%;
     overflow: hidden;
     transform: translate3d(0px, -160px, 0px);
@@ -987,6 +1005,7 @@ header nav ul li a:hover {
     position: absolute;
     top: -205px;
     height: 30%;
+    left: 20%;
   }
 }
 
@@ -1042,6 +1061,7 @@ header nav ul li a:hover {
 }
 .contact .left .container .button {
   text-align: right;
+  margin-bottom: 50px;
 }
 .contact .left .container button {
   display: inline-block;
